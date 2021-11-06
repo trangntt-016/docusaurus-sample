@@ -22,7 +22,7 @@ npm init docusaurus@latest my-website classic
 
 ## Start your site
 
-Run the development server:
+Run the development server: :D
 
 ```shell
 cd my-website
