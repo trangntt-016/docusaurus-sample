@@ -4,4 +4,4 @@ sidebar_position: 1
 ---
 # Hello
 
-This is Trang Nguyen's **first Docusaurus document**!
+This is Trang (Tracy)'s **first Docusaurus document**!
