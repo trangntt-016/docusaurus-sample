@@ -39,5 +39,15 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: git
-        
+          GIT_USER: trangntt-016
+        run: |
+          git config --global user.email "trangntt.016@gmail.com"
+          git config --global user.name "trangntt-016"
+          if [ -e yarn.lock ]; then
+            yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+            npm ci
+          else
+            npm i
+          fi
+          npm run deploy
